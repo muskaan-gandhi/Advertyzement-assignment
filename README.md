@@ -1,6 +1,30 @@
+
+# Adevertyzement-assignment
+
+The task is to create the user card grid from the given data "https://reqres.in/api/users?page=1" by making api call on clicking the button and show the loader before the grid is displayed.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+First of all I created a react app named advertyzement by running "npx create-react-app advertyzement" command in the terminal having npm as the node manager.
+
+# Installing dependencies.
+Dependencies used for the assignment : 
+
+  (i)Axios used to fetch data from the API => 
+              installation = npm install axios
+              usage = import axios from "axios";
+              
+  (ii)React Spinners CSS Loaders is a collection of React spinners components with pure css these are based on loading.io and from all over the web.
+              installation = npm i --save react-spinners-css  
+              usage = import { Roller } from 'react-spinners-css'; 
+
+# Algorithm
+By using React hooks usestate, I declared the initial value for data as null and loader as false.
+In fetchData I used async-await along with axios to fetch the data from API and also set the loader off.
+Later with useEffect I set the timeout for the loader of 2s.
+
+At last I returned the fetchData by using onClick property of button after showing loading screen for 2 seconds the User card grid layout is displayed on the screen.
 
 ## Available Scripts
 
